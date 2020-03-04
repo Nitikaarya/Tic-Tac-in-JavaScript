@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <style>
+        button {
+            height: 10%;
+            width: 10%;
+            background-color: #00CCCC;
+            font-size: 18px;
+        }
+    </style>
+    <script type="text/javascript">
+        var k = 0;
+
+        function clickevent1() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("1").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("1").setAttribute("disabled", true);
+            //a=k;
+            //k-1;
+            window.a = k;
+            console.log(a);
+            check();
+        }
+
+        function clickevent2() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("2").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("2").setAttribute("disabled", true);
+            window.b = k;
+            console.log(b);
+            check();
+        }
+
+        function clickevent3() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("3").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("3").setAttribute("disabled", true);
+            //c=k;
+            window.c = k;
+            console.log(c);
+            check();
+
+        }
+
+        function clickevent4() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("4").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("4").setAttribute("disabled", true);
+            window.d = k;
+            console.log(d);
+            check();
+        }
+
+        function clickevent5() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("5").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("5").setAttribute("disabled", true);
+            window.e = k;
+            console.log(e);
+            check();
+        }
+
+        function clickevent6() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("6").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("6").setAttribute("disabled", true);
+            window.f = k;
+            console.log(f);
+            check();
+        }
+
+        function clickevent7() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("7").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("7").setAttribute("disabled", true);
+            window.g = k;
+            console.log(g);
+            check();
+        }
+
+        function clickevent8() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("8").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("8").setAttribute("disabled", true);
+            window.h = k;
+            console.log(h);
+            check();
+        }
+
+        function clickevent9() {
+            k = (k == 0) ? '*' : '0';
+            document.getElementById("9").innerHTML = "<h1>" + k + "</h1>";
+            document.getElementById("9").setAttribute("disabled", true);
+            window.i = k;
+            console.log(i);
+            check();
+        }
+
+        function check() {
+            console.log(window.a);
+            console.log(window.b);
+            console.log(window.c);
+            if (window.b == '0' && window.c == '0' && window.a == '0') {
+                alert("you win");
+            } else if (window.d == '0' && window.f == '0' && window.e == '0') {
+                alert("you win");
+            } else if (window.g == '0' && window.h == '0' && window.i == '0') {
+                alert("you win");
+            } else if (window.d == '0' && window.a == '0' && window.g == '0') {
+                alert("you win");
+            } else if (window.e == '0' && window.b == '0' && window.h == '0') {
+                alert("you win");
+            } else if (window.c == '0' && window.e == '0' && window.f == '0') {
+                alert("you win");
+            } else if (window.a == '0' && window.i == '0' && window.e == '0') {
+                alert("you win");
+            } else if (window.c == '0' && window.e == '0' && window.g == '0') {
+                alert("you win");
+            } else if (window.a == '*' && window.b == '*' && window.c == '*') {
+                alert("you win");
+            } else if (window.d == '*' && window.e == '*' && window.f == '*') {
+                alert("you win");
+            } else if (window.g == '*' && window.h == '*' && window.i == '*') {
+                alert("you win");
+            } else if (window.a == '*' && window.d == '*' && window.g == '*') {
+                alert("you win");
+            } else if (window.b == '*' && window.e == '*' && window.h == '*') {
+                alert("you win");
+            } else if (window.c == '*' && window.e == '*' && window.g == '*') {
+                alert("you win");
+            } else if (window.a == '*' && window.e == '*' && window.i == '*') {
+                alert("you win");
+            } else if (window.c == '*' && window.e == '*' && window.g == '*') {
+                alert("you win");
+            }
+            //111
+        }
+    </script>
+</head>
+
+<body style="background-color:#CCCCCC; font-size:36px; text-align:center">
+    <h1>Tic tac</h1>
+    <p>player 1st = *</p>
+    <p>player 2nd = 0</p>
+    <div>
+        <button id="1" onClick="clickevent1()"></button>
+        <button id="2" onClick="clickevent2()"></button>
+        <button id="3" onClick="clickevent3()"></button>
+    </div>
+    <div>
+        <button id="4" onClick="clickevent4()"></button>
+        <button id="5" onClick="clickevent5()"></button>
+        <button id="6" onClick="clickevent6()"></button>
+    </div>
+    <div>
+        <button id="7" onClick="clickevent7()"></button>
+        <button id="8" onClick="clickevent8()"></button>
+        <button id="9" onClick="clickevent9()"></button>
+    </div><br/>
+    <button type="reset" style="background-color:#333333; width:20%; color:#FFFFFF; font-size:36px" onClick="location.reload();">Retry</button>
+    </center>
+</body>
+
+</html>
